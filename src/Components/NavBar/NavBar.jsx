@@ -1,9 +1,13 @@
 import { Header, Container, LogoImg, Nav, List, LinkButton, NavButton } from "./NavBar.Styles";
 import logo from "../../assets/logo-xbox.svg"
+import ScrollReveal from "scrollreveal";
+import { useRef } from "react";
 const NavBar = () => {
+    const header = useRef()
+    ScrollReveal().reveal(header.current,  { duration: "1000", distance: "200px", origin: "top", easing: "ease", interval: "2000"})
 
     return ( 
-        <Header>
+        <Header ref={header}>
             <Container>
                 <Nav>
                 <LogoImg src={logo}></LogoImg>

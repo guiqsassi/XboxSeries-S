@@ -1,8 +1,14 @@
 import { Container, Banner, TextContainer, Tittle, Paragraph,ControllerImg} from "./About.styles";
 import controle from "../../assets/controle-xbox.png"
+import ScrollReveal from "scrollreveal";
+import { useRef } from "react";
 const About = () => {
+
+    const container = useRef()
+
+    ScrollReveal().reveal(container.current, {delay: "500", reset: true })
     return ( 
-        <Container>
+        <Container ref={container}>
             <Banner>
                 <TextContainer>
                     <Tittle>Desempenho <br /> <span>aperfeiçoado</span></Tittle>

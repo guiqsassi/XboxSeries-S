@@ -1,9 +1,14 @@
 import { Container, FaqBanner, Details, List } from "./Faq.Styles";
 import { Tittle } from "../About/About.styles";
-import arrow from "../../assets/arrow.svg"
+import { useRef } from "react";
+import ScrollReveal from "scrollreveal";
 const Faq = () => {
+    const container = useRef()
+
+    ScrollReveal().reveal(container.current, {delay: "500", reset: true})
+
     return ( 
-        <Container>
+        <Container ref={container}>
             <FaqBanner>
                 <Tittle variant={"48px"}>
                 Perguntas <span>frequentes</span>

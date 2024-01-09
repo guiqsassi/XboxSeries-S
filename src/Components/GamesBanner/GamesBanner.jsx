@@ -7,10 +7,17 @@ import Fifa from "../../assets/fifa.png"
 import Fifa_logo from "../../assets/fifaLogo.svg"
 import minecraft from "../../assets/Minecraft.png"
 import minecraft_logo from "../../assets/minecraft-Logo.png"
+import { useRef } from "react";
+import ScrollReveal from "scrollreveal";
+
 const GammesBanner = () => {
+    const GamePad = useRef()
+
+    ScrollReveal().reveal(GamePad.current,  {reset: true, duration: "500", distance: "200px", origin: "top", easing: "ease", interval: "2000"})
+    
     return ( 
-        <Container>
-            <Banner>
+        <Container ref={GamePad} className="GamePad">
+            <Banner >
                 <BackgroundImage src={farcry6}></BackgroundImage>
                 <GameLogo> <img src={farcry6Logo} alt="" /></GameLogo>
             </Banner>

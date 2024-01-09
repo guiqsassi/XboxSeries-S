@@ -1,5 +1,5 @@
 import {createGlobalStyle} from "styled-components"
-
+import keyframes from "styled-components"
 export const GlobalStyle = createGlobalStyle`
     body{
         width: 100%;
@@ -36,3 +36,13 @@ export const GlobalStyle = createGlobalStyle`
     }
     
 `
+   export const fade = keyframes.div`
+        from{
+            transform: translateY(-500px);
+            opacity: 0
+        }
+        to{
+            transform: translateY(0px);
+            opacity: 1
+        }
+    `

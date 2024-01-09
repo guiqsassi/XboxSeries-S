@@ -1,6 +1,7 @@
 import styled from "styled-components";
-import xbox from "../../assets/xbox.png"
 
+import xbox from "../../assets/xbox.png"
+import { fade } from "../../GlobalStyles.styles";
 export const Container = styled.div`
     width: 100%;
     display: flex;
@@ -25,6 +26,7 @@ export const TittleContainer = styled.div`
     @media (max-width: 900px) {
         height: auto;
     }
+
 `
 export const Tittle = styled.h1`
     color: #FFF;
