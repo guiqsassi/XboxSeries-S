@@ -1,10 +1,10 @@
 import { Container, Banner, BackgroundImage,GameLogo } from "./GamesBanner.style";
 import farcry6 from "../../assets/farcry6.png"
-import farcry6Logo from "../../assets/FARCRY6-LOGO.png"
+import farcry6Logo from "../../assets/FARCRY6-Logo.png"
 import forza from "../../assets/forza.png"
 import Forza_Logo from "../../assets/Forza_Horizon-Logo.png"
 import Fifa from "../../assets/fifa.png"
-import Fifa_logo from "../../assets/fifalogo.svg"
+import Fifa_logo from "../../assets/fifaLogo.svg"
 import minecraft from "../../assets/Minecraft.png"
 import minecraft_logo from "../../assets/minecraft-Logo.png"
 const GammesBanner = () => {
