@@ -7,6 +7,7 @@ export const GlobalStyle = createGlobalStyle`
         margin: 0;
         padding: 0;
         background-color: #0D100C;
+        overflow-x: hidden;
     }
     html{
         width: 100%;
@@ -22,6 +23,16 @@ export const GlobalStyle = createGlobalStyle`
         display: flex;
         flex-direction: column;
         gap: 96px;
+    }
+    @media (max-width: 1000px) {
+        #root{
+            gap: 48px;
+        }
+    }
+    @media (max-width: 700px) {
+        #root{
+            gap: 32px;
+        }
     }
     
 `

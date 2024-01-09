@@ -14,6 +14,15 @@ export const FaqBanner = styled.div`
     display: flex;
     flex-direction: column;
     gap: 32px;
+    @media (max-width: 1400px) {
+        width: 70%;
+    }
+    @media (max-width: 1000px) {
+        width: 80%;
+    }
+    @media (max-width: 700px) {
+        width: 100%;
+    }
     
  `
  export const Details = styled.details`
@@ -28,6 +37,7 @@ export const FaqBanner = styled.div`
     svg{
             transform: rotate(0deg);
             transition: 0.5s;
+            width: 30px;
             stroke: white;
         }
     :hover{
@@ -42,6 +52,15 @@ export const FaqBanner = styled.div`
         font-weight: 500;
         line-height: 150%; /* 27px */
         padding: 12px 0px 24px 0px;
+        @media (max-width: 1400px) {
+        font-size: 16px;
+    }
+    @media (max-width: 1000px) {
+        font-size: 14px;
+    }
+    @media (max-width: 650px) {
+        font-size: 12px;
+    }
 
     }
     border-bottom: 1px solid #2E2E2E;
@@ -58,6 +77,15 @@ export const FaqBanner = styled.div`
     font-style: normal;
     font-weight: 500;
     line-height: 150%; /* 36px */
+    @media (max-width: 1400px) {
+        font-size: 20px;
+    }
+    @media (max-width: 1000px) {
+        font-size: 16px;
+    }
+    @media (max-width: 650px) {
+        font-size: 14px;
+    }
     }
     list-style: none;
     ::-webkit-details-marker{

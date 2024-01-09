@@ -4,21 +4,32 @@ export const Container = styled.div`
     width: 100%;
     height: auto;
     display: flex;
+    
+    @media (max-width: 1100px) {
+        flex-wrap: wrap;
+        gap: 40px;
+        align-items: center;
+        justify-content: center;
+    }
 `
 export const Banner = styled.div`
     width: 25%;
     height: 800px;
     position: relative;
     overflow: hidden;
-    transition: 1s ease-in-out ;
+    transition: transform 1s ease-in-out ;
     display: flex;
     
     align-items: end;
     justify-content: center;
+    @media (max-width: 1300px) {
+        width: 337px;
+        height: 497px;
+    }
     :hover{
         transform: scale(1);
         cursor: pointer;
-        transition: 1s ease-in-out ;
+        transition: transform 1s ease-in-out ;
         filter: brightness(1);
 
 
@@ -43,4 +54,10 @@ export const GameLogo = styled.div`
     display: flex;
     align-items: start;
     justify-content: center;
+    @media (max-width: 1300px) {
+        img{
+            width: 70%;
+        }
+    }
+
 `

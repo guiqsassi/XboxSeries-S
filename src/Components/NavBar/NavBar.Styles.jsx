@@ -2,20 +2,37 @@ import styled from "styled-components";
 
 export const Header = styled.header`
     width: 100%;
-    height: 87px;
-    position: fixed;
     z-index: 111;
     top: 0;
     display: flex;
     align-items: center;
+
     justify-content: center;
 `
 export const Container = styled.div`
     width: 60%;
     height: 39px;
     display: flex;
+    padding: 24px 32px;
+
     align-items: center;
     justify-content: space-between;
+    @media (max-width: 1400px) {
+        width: 70%;
+    }
+    @media (max-width: 1100px) {
+        width: 90%;
+    }
+    @media (max-width: 900px) {
+        width: 100%;
+        height: auto;
+
+    }
+    @media (max-width: 700px) {
+        flex-direction: column;
+        gap: 32px;
+    }
+    
 `
 export const LogoImg = styled.img`
     width: 112px;
@@ -26,7 +43,16 @@ export const Nav = styled.nav`
     gap: 64px;
     display: flex;
     align-items: center;
-
+    @media (max-width: 1100px) {
+        gap: 48px;
+    }
+    @media (max-width: 750px) {
+        gap: 24px;
+    }
+    @media (max-width: 700px) {
+        flex-direction: column;
+        gap: 24px;
+    }
 `
 export const LinkButton = styled.a`
     padding: 6px 10px;
@@ -40,6 +66,11 @@ export const LinkButton = styled.a`
     letter-spacing: 0.14px;
     text-transform: uppercase;
     border-radius: 50px;
+    @media (max-width: 900px) {
+        font-size: 8px;
+
+    }
+
 
 `
 export const List = styled.ul`
@@ -49,6 +80,15 @@ export const List = styled.ul`
     align-items: center;
     padding: 0;
     margin: 0;
+    @media  (max-width: 900px) {
+        gap: 9px;
+    }
+    @media (max-width: 700px) {
+        gap: 24px;
+    }
+    @media (max-width: 400px) {
+        gap: 8px;
+    }
     li{
         list-style: none;
     a{
@@ -61,6 +101,17 @@ export const List = styled.ul`
         line-height: normal;
         letter-spacing: 0.14px;
         text-transform: uppercase;
+        @media (max-width: 900px) {
+            padding: 6px 10px;
+    background-color: rgba(103, 103, 103, 0.39);
+        font-size: 10px;
+        border-radius: 50px;
+
+
+    }
+    @media  (max-width: 750px) {
+        font-size: 8px;
+    }
         }
 }
 `
@@ -86,4 +137,31 @@ export const NavButton = styled.button`
             cursor: pointer;
         }
     }
+    @media (max-width: 700px) {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a{
+            display: flex;
+        align-items: center;
+        justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
+}
+    @media (max-width: 400px) {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a{
+            display: flex;
+        align-items: center;
+        justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
+}
+
 `

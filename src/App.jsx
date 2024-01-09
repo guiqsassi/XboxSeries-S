@@ -4,6 +4,7 @@ import About from "./Components/About/About"
 import Home from "./Components/Home/Home"
 import GamesBanner from "./Components/GamesBanner/GamesBanner"
 import Faq from "./Components/Faq/Faq"
+import Footer from "./Components/Footer/Footer"
 function App() {
 
   return (
@@ -14,6 +15,7 @@ function App() {
     <About></About>
     <GamesBanner></GamesBanner>
     <Faq></Faq>
+    <Footer></Footer>
     </>
 
   
