@@ -3,7 +3,7 @@ import xbox from "../../assets/xbox.png"
 
 export const Container = styled.div`
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,9 +11,11 @@ export const Container = styled.div`
 `
 
 export const TittleContainer = styled.div`
-    margin-top: 199px;
     width: 100%;
-    height: 136px;
+    height: 35vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
 `
 export const Tittle = styled.h1`
     color: #FFF;

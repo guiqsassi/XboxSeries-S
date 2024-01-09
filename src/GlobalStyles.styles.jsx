@@ -16,10 +16,12 @@ export const GlobalStyle = createGlobalStyle`
     }
     #root{
         width: 100%;
-        height: 100%;
+        height: auto;
         margin: 0;
         padding: 0;
-        
+        display: flex;
+        flex-direction: column;
+        gap: 96px;
     }
     
 `
